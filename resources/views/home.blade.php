@@ -16,7 +16,7 @@
                 @foreach($barang as $data)
                 <div class="col-xl-3 col-6 mb-3">
                     <div class="col-md-12 shadow-sm">
-                        <img src="{{ asset('storage/app/public/images/'.$data->foto_barang) }}" alt="{{ $data->nama_barang }}" class="w-100">
+                        <img src="{{ asset('storage/images/barang/'.$data->foto_barang) }}" alt="{{ $data->nama_barang }}" class="w-100">
                         <div class="card-body">
                             <h5 class="card-title">{{ $data->nama_barang }}</h5>
                             <p class="card-text">Rp. {{ number_format($data->harga_barang) }}</p>
